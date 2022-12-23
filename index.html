@@ -13,10 +13,11 @@
     <script src="https://kit.fontawesome.com/4e82d593a7.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
-        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.min.css">
 </head>
 
 <body id="page-top">
@@ -31,21 +32,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-md-1"><a class="nav-link py-3 px-0 px-md-3 rounded"
-                            href="#about">About</a></li>
-                    <li class="nav-item mx-0 mx-md-1"><a class="nav-link py-3 px-0 px-md-3 rounded"
-                            href="#works">Works</a></li>
-                    <li class="nav-item mx-0 mx-md-1"><a class="nav-link py-3 px-0 px-md-3 rounded"
-                            href="#profile">Profile</a></li>
-                    <li class="nav-item mx-0 mx-md-1"><a class="nav-link py-3 px-0 px-md-3 rounded"
-                            href="#contact">Contact</a></li>
+                    <li class="nav-item mx-0 mx-md-1"><a class="nav-link py-3 px-0 px-md-3 rounded" href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-md-1"><a class="nav-link py-3 px-0 px-md-3 rounded" href="#works">Works</a></li>
+                    <li class="nav-item mx-0 mx-md-1"><a class="nav-link py-3 px-0 px-md-3 rounded" href="#profile">Profile</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-md-1"><a class="nav-link py-3 px-0 px-md-3 rounded" href="#contact">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Masthead-->
     <header class="masthead text-main2 text-center">
-        <div class="container d-flex align-items-center flex-column">
+        <div class="container flex-column">
             <!-- Masthead Avatar Image-->
             <!-- <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." /> -->
             <!-- Masthead Heading-->
@@ -53,13 +52,40 @@
             <!-- Icon Divider-->
             <div class="divider-custom divider-main2">
                 <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-icon"><i class="fas fa-star fa-spin"></i></div>
                 <div class="divider-custom-line"></div>
+            </div>
+            <div class="row text-main2 justify-content-center">
+                <div class="fa-2x col-2 col-md-1 d-sm-block">
+                    <i class="fa-solid fa-star faa-falling animated"></i>
+                </div>
+                <div class="fa-3x col-2 col-md-1 offset-md-1 d-sm-block">
+                    <i class="fa-solid fa-star faa-falling animated faa-slow"></i>
+                </div>
+                <div class="col-2 col-md-1 d-sm-block">
+                    <i class="fa-solid fa-star faa-falling animated faa-fast"></i>
+                </div>
+                <div class="fa-2x col-md-1 d-none d-md-block">
+                    <i class="fa-solid fa-star faa-falling animated faa-slow"></i>
+                </div>
+                <div class="fa-3x col-md-1 offset-1 d-none d-md-block">
+                    <i class="fa-solid fa-star faa-falling animated"></i>
+                </div>
+                <div class="col-md-1 d-none d-md-block">
+                    <i class="fa-solid fa-star faa-falling animated"></i>
+                </div>
+                <div class="fa-4x col-md-1 offset-1 d-none d-md-block">
+                    <i class="fa-solid fa-star faa-falling animated faa-slow"></i>
+                </div>
+                <div class="fa-2x col-md-1 offset-1 d-none d-md-block">
+                    <i class="fa-solid fa-star faa-falling animated faa-fast"></i>
+                </div>
             </div>
             <!-- Masthead Subheading-->
             <!-- <p class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p> -->
         </div>
     </header>
+
     <!-- About Section-->
     <section class="page-section bg-main2 text-white mb-0" id="about">
         <div class="container">
@@ -68,27 +94,23 @@
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon d-none d-md-block"><i class="fa-solid fa-desktop"></i></div>
-                <div class="divider-custom-icon d-block d-md-none"><i class="fa-solid fa-mobile-screen"></i></div>
+                <div class="divider-custom-icon d-none d-md-block"><i class="fa-solid fa-desktop fa-fade"
+                        style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.5;"></i></div>
+                <div class="divider-custom-icon d-md-none"><i class="fa-solid fa-mobile-screen fa-fade"
+                        style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.5;"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
             <!-- About Section Content-->
             <div class="row text-white">
                 <div class="col-lg-4 ms-auto">
-                    <p class="lead">このサイトは泥濘竜太のポートフォリオを掲載しています。これまでに携わった案件や制作物、スキルをまとめています。</p>
+                    <p class="lead">このサイトは泥濘竜太のポートフォリオを掲載しています。これまでに携わった案件や制作物をまとめています。</p>
                 </div>
                 <div class="col-lg-4 me-auto">
-                    <p class="lead">This site contains Nukari's portfolio. It is a collection of projects, productions,
-                        and skills that I have been involved in.</p>
+                    <p class="lead">This site contains the portfolio of Ryuta Muddy. It is a collection of projects
+                        and
+                        productions that I have been involved in.</p>
                 </div>
             </div>
-            <!-- About Section Button-->
-            <!-- <div class="text-center mt-4">
-                <a class="btn btn-xl btn-outline-dark" href="https://startbootstrap.com/theme/freelancer/">
-                    <i class="fas fa-download me-2"></i>
-                    テンプレートはこちら
-                </a>
-            </div> -->
         </div>
     </section>
     <!-- Works Section-->
@@ -99,7 +121,9 @@
             <!-- Icon Divider-->
             <div class="divider-custom divider-main2">
                 <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fa-solid fa-robot"></i></div>
+                <div class="divider-custom-icon"><i class="fa-solid fa-robot fa-bounce"
+                        style=" --fa-bounce-start-scale-x: 1.1; --fa-bounce-start-scale-y: 0.7; --fa-bounce-jump-scale-x: 0.9; --fa-bounce-jump-scale-y: 1.1; --fa-bounce-land-scale-x: 1.1; --fa-bounce-land-scale-y: 0.9;"></i>
+                </div>
                 <div class="divider-custom-line"></div>
             </div>
             <!-- Works Grid Items-->
@@ -107,67 +131,63 @@
                 <!-- Works Item 1-->
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#worksModal1">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="..." />
+                        <img class="img-fluid" src="assets/img/portfolio/site.png" alt="..." />
                     </div>
                 </div>
                 <!-- works Item 2-->
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#worksModal2">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
+                        <img class="img-fluid" src="assets/img/portfolio/crazyrally.png" alt="..." />
                     </div>
                 </div>
                 <!-- works Item 3-->
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#worksModal3">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
+                            </div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="..." />
+                        <img class="img-fluid" src="assets/img/portfolio/meisei.png" alt="..." />
                     </div>
                 </div>
                 <!-- works Item 4-->
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#worksModal4">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
+                            </div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/game.png" alt="..." />
+                        <img class="img-fluid" src="assets/img/portfolio/akasaka.png" alt="..." />
                     </div>
                 </div>
                 <!-- works Item 5-->
                 <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#worksModal5">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
+                            </div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="..." />
+                        <img class="img-fluid" src="assets/img/portfolio/shiraume.png" alt="..." />
                     </div>
                 </div>
                 <!-- works Item 6-->
                 <div class="col-md-6 col-lg-4">
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#worksModal6">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i>
+                            </div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
+                        <img class="img-fluid" src="assets/img/portfolio/hubs.png" alt="..." />
                     </div>
                 </div>
             </div>
@@ -181,18 +201,21 @@
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fa-regular fa-user"></i></div>
+                <div class="divider-custom-icon"><i class="fa-regular fa-user fa-beat"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
             <!-- Profile Section Content-->
             <div class="row">
                 <div class="col-lg-4 ms-auto">
                     <p class="lead fw-bold">泥濘 竜太</p>
-                    <p class="lead">金融系運用オペレーターから始まり、金融系、通信系システム開発を経て、現在はXR事業のプロジェクト管理をしつつ、VRコンテンツの制作も行っている。</p>
+                    <p class="lead">金融系運用オペレーターから始まり、金融系、通信系システム開発を経て、現在はXR事業のプロジェクト管理をしつつ、VRコンテンツの制作も行っています。</p>
                 </div>
                 <div class="col-lg-4 me-auto">
                     <p class="lead fw-bold">Ryuta Nukari</p>
-                    <p class="lead">He started as a financial operation operator, worked in financial and telecommunications systems development, and is currently managing projects for the XR business while also creating VR content.</p>
+                    <p class="lead">He started as a financial operation operator, worked in financial and
+                        telecommunications systems development, and is currently managing projects for the XR
+                        business
+                        while also creating VR content.</p>
                 </div>
             </div>
         </div>
@@ -205,7 +228,8 @@
             <!-- Icon Divider-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fa-regular fa-envelope"></i></div>
+                <div class="divider-custom-icon"><i class="fa-regular fa-envelope faa-horizontal animated"></i>
+                </div>
                 <div class="divider-custom-line"></div>
             </div>
             <!-- Contact Section Form-->
@@ -236,9 +260,8 @@
                         </div>
                         <!-- Message input-->
                         <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" type="text"
-                                placeholder="Enter your message here..." style="height: 10rem"
-                                data-sb-validations="required"></textarea>
+                            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."
+                                style="height: 10rem" data-sb-validations="required"></textarea>
                             <label for="message">メッセージ</label>
                             <div class="invalid-feedback" data-sb-feedback="message:required">メッセージを入力してください
                             </div>
@@ -273,8 +296,7 @@
     </div>
     <!-- works Modals-->
     <!-- works Modal 1-->
-    <div class="portfolio-modal modal fade" id="worksModal1" tabindex="-1" aria-labelledby="worksModal1"
-        aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="worksModal1" tabindex="-1" aria-labelledby="worksModal1" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
@@ -284,23 +306,35 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- works Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                <h2 class="portfolio-modal-title text-main1 text-uppercase mb-0">Website</h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom divider-main1">
                                     <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star fa-spin faa-slow"></i></div>
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- works Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
+                                <img class="img-fluid rounded" src="assets/img/portfolio/site.png" alt="..." />
                                 <!-- works Modal - Text-->
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                <p class="marker mt-4 mb-4 text-start">Portfolio Site</p>
+                                <p class="mb-4 text-start">
+                                    ポートフォリオ用に作成した当サイトです。
+                                    レスポンシブデザインに対応した作りで、PCとスマホでアイコンなどの表示が変わります。
+                                    アイコンは <b>font-awesome</b> を使用しており、アニメーションを随所に盛り込んでいます。
+                                    <b>Bootstrap 5</b> のテンプレートを使用して作成しています。
                                 </p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                <!-- About Section Button-->
+                                <div class="text-center mt-4">
+                                    <a class="btn btn-xl btn-outline-dark" href="https://startbootstrap.com/theme/freelancer/"
+                                        target="_blank">
+                                        <i class="fas fa-download me-2"></i>
+                                        テンプレート
+                                    </a>
+                                </div>
+                                <p class="marker text-main1 mb-4">_</p>
+                                <button class="btn btn-main" data-bs-dismiss="modal">
                                     <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
+                                    閉じる
                                 </button>
                             </div>
                         </div>
@@ -310,8 +344,7 @@
         </div>
     </div>
     <!-- works Modal 2-->
-    <div class="portfolio-modal modal fade" id="worksModal2" tabindex="-1" aria-labelledby="worksModal2"
-        aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="worksModal2" tabindex="-1" aria-labelledby="worksModal2" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
@@ -321,23 +354,30 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- works Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                                <h2 class="portfolio-modal-title text-main1 text-uppercase mb-0">Apps</h2>
                                 <!-- Icon Divider-->
-                                <div class="divider-custom">
+                                <div class="divider-custom divider-main1">
                                     <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-icon"><i class="fa-solid fa-gamepad faa-wrench animated faa-slow"></i></div>
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- works Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
+                                <div class="ratio ratio-16x9">
+                                    <iframe width="796" height="448" src="https://www.youtube.com/embed/3C8X1it-Dg4?rel=0fs=0"
+                                        title="CrazyRally" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
                                 <!-- works Modal - Text-->
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                <p class="marker mt-4 mb-4 text-start">クレイジー・ラリー</p>
+                                <p class="text-start">
+                                    <b>Unity Learn</b> のジュニアプログラマーのパスウェイで学習した内容を基に作成したスマホ向けアプリです。
+                                    アセット、フォント、BGMなどはフリー素材を使用し、蜂の行動パターンは <b>DOTween</b> を使用して作成しました。
                                 </p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                <p class="marker text-main1 mb-4">_</p>
+                                <button class="btn btn-main" data-bs-dismiss="modal">
                                     <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
+                                    閉じる
                                 </button>
                             </div>
                         </div>
@@ -347,8 +387,7 @@
         </div>
     </div>
     <!-- works Modal 3-->
-    <div class="portfolio-modal modal fade" id="worksModal3" tabindex="-1" aria-labelledby="worksModal3"
-        aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="worksModal3" tabindex="-1" aria-labelledby="worksModal3" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
@@ -358,23 +397,30 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- works Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                                <h2 class="portfolio-modal-title text-main1 text-uppercase mb-0">VRTour</h2>
                                 <!-- Icon Divider-->
-                                <div class="divider-custom">
+                                <div class="divider-custom divider-main1">
                                     <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-icon"><i class="fa-solid fa-vr-cardboard faa-tada animated"></i></div>
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- works Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
+                                <a href="https://www.meisei-u.ac.jp/admission/weboc/vr/" target="_blank">
+                                    <img class="img-fluid rounded" src="assets/img/portfolio/meisei.png" alt="..." />
+                                </a>
                                 <!-- works Modal - Text-->
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                <p class="marker mt-4 mb-4 text-start">明星大学360°VRキャンパスツアー</p>
+                                <p class="mb-4 text-start">
+                                    360°カメラで撮影した画像を使って作成したバーチャル学校見学です。
+                                    顧客との打ち合わせから、現地での撮影、ツアー作成、納品まで実施しています。
+                                    ツアー内では写真や動画、説明テキスト、リンクなど要望に応じて様々なアイコン(機能)を設置できます。
+                                    <br><br>
+                                    <a href="https://www.meisei-u.ac.jp/admission/weboc/vr/" target="_blank">https://www.meisei-u.ac.jp/admission/weboc/vr/</a>
                                 </p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                <p class="marker text-main1 mb-4">_</p>
+                                <button class="btn btn-main" data-bs-dismiss="modal">
                                     <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
+                                    閉じる
                                 </button>
                             </div>
                         </div>
@@ -384,8 +430,7 @@
         </div>
     </div>
     <!-- works Modal 4-->
-    <div class="portfolio-modal modal fade" id="worksModal4" tabindex="-1" aria-labelledby="worksModal4"
-        aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="worksModal4" tabindex="-1" aria-labelledby="worksModal4" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
@@ -395,23 +440,30 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- works Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+                                <h2 class="portfolio-modal-title text-main1 text-uppercase mb-0">VRTour</h2>
                                 <!-- Icon Divider-->
-                                <div class="divider-custom">
+                                <div class="divider-custom divider-main1">
                                     <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-icon"><i class="fa-solid fa-vr-cardboard faa-tada animated"></i></div>
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- works Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
+                                <a href="https://www.meisei-u.ac.jp/admission/weboc/vr/" target="_blank">
+                                    <img class="img-fluid rounded" src="assets/img/portfolio/akasaka.png" alt="..." />
+                                </a>
                                 <!-- works Modal - Text-->
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                <p class="marker mt-4 mb-4 text-start">赤坂Biz360°VRツアー</p>
+                                <p class="mb-4 text-start">
+                                    360°カメラで撮影した画像を使って作成したバーチャル店舗見学です。
+                                    プロジェクト管理として参画し、顧客との打ち合わせから、現地での撮影、納品まで実施しています。
+                                    ツアー作成はチームのサポートとして対応し、管理をメインに行っています。
+                                    <br><br>
+                                    <a href="https://akasakabizshop-360vr.com/" target="_blank">https://akasakabizshop-360vr.com/</a>
                                 </p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                <p class="marker text-main1 mb-4">_</p>
+                                <button class="btn btn-main" data-bs-dismiss="modal">
                                     <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
+                                    閉じる
                                 </button>
                             </div>
                         </div>
@@ -421,8 +473,7 @@
         </div>
     </div>
     <!-- works Modal 5-->
-    <div class="portfolio-modal modal fade" id="worksModal5" tabindex="-1" aria-labelledby="worksModal5"
-        aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="worksModal5" tabindex="-1" aria-labelledby="worksModal5" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
@@ -432,23 +483,28 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- works Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                                <h2 class="portfolio-modal-title text-main1 text-uppercase mb-0">360°VR MOVIE</h2>
                                 <!-- Icon Divider-->
-                                <div class="divider-custom">
+                                <div class="divider-custom divider-main1">
                                     <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-icon"><i class="fa-brands fa-youtube faa-float animated"></i></div>
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- works Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
+                                <div class="ratio ratio-16x9">
+                                    <iframe width="680" height="383" src="https://www.youtube.com/embed/nOUGXWJBLTw?rel=0fs=0" title="360°VR学校紹介 　白梅学園清修中学校" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
                                 <!-- works Modal - Text-->
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                <p class="marker mt-4 mb-4 text-start">360°VR学校紹介</p>
+                                <p class="mb-4 text-start">
+                                    360°カメラで撮影した動画を使って作成した学校紹介です。
+                                    プロジェクト管理として参画し、顧客との打ち合わせから、現地での撮影、納品まで実施しています。
+                                    動画編集はチームメンバーが行い、編集の方向性の検討などを行っています。
                                 </p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                <p class="marker text-main1 mb-4">_</p>
+                                <button class="btn btn-main" data-bs-dismiss="modal">
                                     <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
+                                    閉じる
                                 </button>
                             </div>
                         </div>
@@ -458,8 +514,7 @@
         </div>
     </div>
     <!-- works Modal 6-->
-    <div class="portfolio-modal modal fade" id="worksModal6" tabindex="-1" aria-labelledby="worksModal6"
-        aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="worksModal6" tabindex="-1" aria-labelledby="worksModal6" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
@@ -469,24 +524,29 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- works Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+                                <h2 class="portfolio-modal-title text-main1 text-uppercase mb-0">Virtual Meeting Room</h2>
                                 <!-- Icon Divider-->
-                                <div class="divider-custom">
+                                <div class="divider-custom divider-main1">
                                     <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-icon"><i class="fa-solid fa-vr-cardboard faa-tada animated"></i></div>
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- works Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png"
-                                    alt="..." />
+                                <a href="https://hubs.mozilla.com/oPzHVLr/sus-office" target="_blank">
+                                    <img class="img-fluid rounded" src="assets/img/portfolio/hubs.png" alt="..." />
+                                </a>
                                 <!-- works Modal - Text-->
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                <p class="marker mt-4 mb-4 text-start">バーチャル会議室</p>
+                                <p class="mb-4 text-start">
+                                    仮想世界プラットフォームである <b>Mozilla hubs</b> 用のバーチャル空間を <b>spoke</b> を使用して作成しました。
+                                    大きいサイズのオブジェクトやテクスチャを使用すると動作に影響するため、ローポリゴンのオブジェクトを使用したり、使用するテクスチャを減らすことで動作を軽くしています。
+                                    <br><br>
+                                    <a href="https://hubs.mozilla.com/oPzHVLr/sus-office" target="_blank">https://hubs.mozilla.com/oPzHVLr/sus-office</a>
                                 </p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                <p class="marker text-main1 mb-4">_</p>
+                                <button class="btn btn-main" data-bs-dismiss="modal">
                                     <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
+                                    閉じる
                                 </button>
                             </div>
                         </div>

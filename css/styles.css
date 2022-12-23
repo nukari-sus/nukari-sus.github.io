@@ -3033,6 +3033,36 @@ textarea.form-control-lg {
   opacity: 0.65;
 }
 
+.btn-main {
+  color: #fff;
+  background-color: #ffb6b9 ;
+  border-color: #ffb6b9 ;
+}
+.btn-main:hover {
+  color: #fff;
+  background-color: #ff9da1;
+  border-color: #ff8388;
+}
+.btn-check:focus + .btn-main, .btn-main:focus {
+  color: #fff;
+  background-color: #ff9da1;
+  border-color: #ff8388;
+  box-shadow: 0 0 0 0.25rem rgba(255, 183, 185, 0.5);
+}
+.btn-check:checked + .btn-main, .btn-check:active + .btn-main, .btn-main:active, .btn-main.active, .show > .btn-main.dropdown-toggle {
+  color: #fff;
+  background-color: #ff8388;
+  border-color: #ff6a70;
+}
+.btn-check:checked + .btn-main:focus, .btn-check:active + .btn-main:focus, .btn-main:active:focus, .btn-main.active:focus, .show > .btn-main.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 183, 185, 0.5);
+}
+.btn-main:disabled, .btn-main.disabled {
+  color: #fff;
+  background-color: #ffb6b9 ;
+  border-color: #ffb6b9 ;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #8ac6d1;
@@ -11528,7 +11558,8 @@ html {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+  background-color: rgba(255,182,185,1);
+  
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
@@ -11562,4 +11593,9 @@ html {
 
 .copyright {
   background-color: #1a252f;
+}
+
+.marker{
+  background: linear-gradient(transparent 65%, #ffb6b9 65%); /*マーカーの色、幅を指定*/
+  font-weight: bold; /*マーカー部分の文字を太字*/
 }
